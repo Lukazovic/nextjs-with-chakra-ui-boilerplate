@@ -1,6 +1,4 @@
 import { render, screen } from 'utils/test-utils'
-import { matchers } from '@emotion/jest'
-expect.extend(matchers)
 
 import Hero from '.'
 

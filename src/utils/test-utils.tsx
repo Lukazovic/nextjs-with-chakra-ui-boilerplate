@@ -1,6 +1,8 @@
 import { render, RenderResult } from '@testing-library/react'
-
 import { ChakraProvider } from '@chakra-ui/react'
+import { matchers } from '@emotion/jest'
+
+expect.extend(matchers)
 
 import theme from 'styles/theme'
 
