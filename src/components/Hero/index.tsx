@@ -1,4 +1,4 @@
-import { Flex, Heading } from '@chakra-ui/react'
+import { Flex, Heading, Img } from '@chakra-ui/react'
 
 type HeroProps = {
   title?: string
@@ -12,6 +12,7 @@ const Hero = ({ title = 'NextJS with Chakra-ui Boilerplate' }: HeroProps) => (
     bgGradient="linear(to-l, #7928CA, #FF0080)"
     bgClip="text"
   >
+    <Img src="/img/chakra-logo.png" alt="Chakra-ui Logo" mr={4} />
     <Heading fontSize="6vw">{title}</Heading>
   </Flex>
 )

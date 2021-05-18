@@ -1,0 +1,21 @@
+{
+  "name": "NextJS with Chakra-ui Boilerplate",
+  "short_name": "NextJS with Chakra-ui Boilerplate",
+  "icons": [
+    {
+      "src": "/img/chakra-logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/chakra-logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#000",
+  "description": "NextJS with Chakra-ui Boilerplate",
+  "display": "fullscreen",
+  "start_url": "/",
+  "theme_color": "#000"
+}

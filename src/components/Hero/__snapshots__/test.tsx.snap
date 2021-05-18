@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Hero/ > should render with a passed heading 1`] = `
+exports[`<Hero/ > should render with a default heading 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -22,6 +22,10 @@ exports[`<Hero/ > should render with a passed heading 1`] = `
 }
 
 .emotion-1 {
+  margin-right: var(--chakra-space-4);
+}
+
+.emotion-2 {
   font-family: var(--chakra-fonts-heading);
   font-weight: var(--chakra-fontWeights-bold);
   font-size: 6vw;
@@ -29,7 +33,7 @@ exports[`<Hero/ > should render with a passed heading 1`] = `
 }
 
 @media screen and (min-width: 52em) {
-  .emotion-1 {
+  .emotion-2 {
     line-height: 1.2;
   }
 }
@@ -69,10 +73,15 @@ exports[`<Hero/ > should render with a passed heading 1`] = `
     <div
       class="emotion-0"
     >
+      <img
+        alt="Chakra-ui Logo"
+        class="chakra-image emotion-1"
+        src="/img/chakra-logo.png"
+      />
       <h2
-        class="chakra-heading emotion-1"
+        class="chakra-heading emotion-2"
       >
-        testing title
+        NextJS with Chakra-ui Boilerplate
       </h2>
     </div>
   </div>

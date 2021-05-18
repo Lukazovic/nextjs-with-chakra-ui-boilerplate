@@ -4,18 +4,22 @@ import Hero from '.'
 
 describe('<Hero/ >', () => {
   it('should render with a default heading', () => {
-    render(<Hero />)
+    const { container } = render(<Hero />)
+
+    expect(screen.getByRole('img', { name: /chakra-ui logo/i }))
 
     expect(
       screen.getByRole('heading', {
         name: /nextJS with chakra-ui boilerplate/i
       })
     ).toBeInTheDocument()
+
+    expect(container.parentElement).toMatchSnapshot()
   })
 
   it('should render with a passed heading', () => {
     const newTitle = 'testing title'
-    const { container } = render(<Hero title={newTitle} />)
+    render(<Hero title={newTitle} />)
 
     expect(screen.getByRole('heading', { name: newTitle })).toBeInTheDocument()
 
@@ -25,7 +29,5 @@ describe('<Hero/ >', () => {
       'background-image',
       'linear-gradient(to left, #7928CA, #FF0080)'
     )
-
-    expect(container.parentElement).toMatchSnapshot()
   })
 })
