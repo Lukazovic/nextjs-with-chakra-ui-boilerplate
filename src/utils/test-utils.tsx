@@ -2,7 +2,7 @@ import { render, RenderResult } from '@testing-library/react'
 
 import { ChakraProvider } from '@chakra-ui/react'
 
-import theme from '../theme'
+import theme from 'styles/theme'
 
 export const customRender = (children: React.ReactNode): RenderResult =>
   render(
