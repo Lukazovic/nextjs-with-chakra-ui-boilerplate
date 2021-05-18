@@ -1,6 +1,6 @@
 import { Flex, Heading, Img } from '@chakra-ui/react'
 
-type HeroProps = {
+export type HeroProps = {
   title?: string
 }
 
