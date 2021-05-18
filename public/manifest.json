@@ -5,12 +5,7 @@
     {
       "src": "/img/chakra-logo.png",
       "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "/img/chakra-logo.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "48x48"
     }
   ],
   "background_color": "#000",
