@@ -6,6 +6,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint src --max-warnings=0",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
     "test": "jest",
     "test:watch": "jest --watch",
     "postinstall": "husky install && chmod +x .husky/pre-commit",
@@ -19,7 +20,8 @@
   },
   "lint-staged": {
     "src/**/*.ts(x)?": [
-      "yarn lint --fix"
+      "yarn lint --fix",
+      "yarn typecheck"
     ]
   },
   "dependencies": {
