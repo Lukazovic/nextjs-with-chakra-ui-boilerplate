@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Hero/ > should render with a passed heading 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(to left, #7928CA, #FF0080);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.emotion-1 {
+  font-family: var(--chakra-fonts-heading);
+  font-weight: var(--chakra-fontWeights-bold);
+  font-size: 6vw;
+  line-height: 1.33;
+}
+
+@media screen and (min-width: 52em) {
+  .emotion-1 {
+    line-height: 1.2;
+  }
+}
+
+<body
+  class="chakra-ui-light"
+>
+  <div
+    id="chakra-toast-portal"
+  >
+    <ul
+      id="chakra-toast-manager-top"
+      style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"
+    />
+    <ul
+      id="chakra-toast-manager-top-left"
+      style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column;"
+    />
+    <ul
+      id="chakra-toast-manager-top-right"
+      style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column;"
+    />
+    <ul
+      id="chakra-toast-manager-bottom-left"
+      style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column;"
+    />
+    <ul
+      id="chakra-toast-manager-bottom"
+      style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"
+    />
+    <ul
+      id="chakra-toast-manager-bottom-right"
+      style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column;"
+    />
+  </div>
+  <div>
+    <div
+      class="emotion-0"
+    >
+      <h2
+        class="chakra-heading emotion-1"
+      >
+        testing title
+      </h2>
+    </div>
+  </div>
+</body>
+`;
