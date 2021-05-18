@@ -4,7 +4,7 @@ import {
   Code,
   List,
   ListIcon,
-  ListItem,
+  ListItem
 } from '@chakra-ui/react'
 import { CheckCircleIcon, LinkIcon } from '@chakra-ui/icons'
 
