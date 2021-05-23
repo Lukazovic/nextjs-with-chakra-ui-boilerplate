@@ -21,8 +21,7 @@
   },
   "lint-staged": {
     "src/**/*.ts(x)?": [
-      "yarn lint --fix",
-      "yarn typecheck"
+      "yarn lint --fix"
     ]
   },
   "dependencies": {
