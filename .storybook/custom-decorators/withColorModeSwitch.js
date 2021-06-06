@@ -1,6 +1,20 @@
 import { ChakraProvider, Flex, Switch, useColorMode } from '@chakra-ui/react'
 
-import theme from '../src/styles/theme'
+import theme from '../../src/theme'
+
+const customTheme = {
+  ...theme,
+  styles: {
+    ...theme.styles,
+    global: {
+      ...theme.styles.global,
+      '.sb-show-main.sb-main-padded': {
+        padding: '0',
+      }
+    }
+  }
+
+}
 
 const Container = (props) => {
   const { colorMode } = useColorMode()
@@ -39,7 +53,7 @@ const ThemeSwitch = () => {
 }
 
 export const withColorModeSwitch = (Story) => (
-  <ChakraProvider resetCSS theme={theme}>
+  <ChakraProvider resetCSS theme={customTheme}>
     <Container>
       <ThemeSwitch />
 
