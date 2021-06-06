@@ -1,3 +1,5 @@
+import { addDecorator } from '@storybook/react'
+import { withNextRouter } from 'storybook-addon-next-router'
 import { ChakraProvider, theme as chakraTheme } from '@chakra-ui/react'
 
 import theme from '../src/styles/theme'
@@ -18,6 +20,8 @@ export const parameters = {
     ]
   }
 }
+
+addDecorator(withNextRouter())
 
 export const decorators = [
   (Story) => (
