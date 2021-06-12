@@ -4,7 +4,7 @@ import { matchers } from '@emotion/jest'
 
 expect.extend(matchers)
 
-import theme from 'styles/theme'
+import theme from 'theme'
 
 export const customRender = (children: React.ReactNode): RenderResult =>
   render(
